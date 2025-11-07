@@ -33,8 +33,10 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
-
+birth_year = int(input("Enter your year of birth: "))
+age = 2025 - birth_year
+is_boomer = birth_year >= 1946 and birth_year <= 1964
+print(f"Your age is {age} and it is {is_boomer} you are a boomer!")
 
 # Task 2: Price Calculator
 # -------------------------------------------
@@ -57,8 +59,13 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
-
-
+price_list = [5.99, 12.50, 8.75]
+total = sum(price_list)
+print(round(total, 2))
+if total > 25.00:
+    is_expensive = True
+else:
+    is_expensive = False
 
 # Task 3: Username Checker
 # -------------------------------------------
@@ -83,9 +90,11 @@ print("-------------------------------------------\n"
 # Contains letter 'a': True
 #
 # Write your code below:
-
-
-
+username = (input("Enter a username: ")).lower()
+if len(username) >= 5 and username.find("a") >= 0:
+    print(f"is_valid") 
+else:
+    print(f"invalid")
 
 # -------------------------------------------
 # Submitting Your Work
